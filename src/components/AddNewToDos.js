@@ -6,7 +6,6 @@ function AddNewToDos() {
 
     return (
         <div className='AddNewToDo'>
-            
             <div className="btn">
             <button onClick={() => setShowModal(true)}>
                 + New To Do
