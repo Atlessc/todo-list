@@ -6,7 +6,7 @@ function AddNewProject() {
         <div className='AddNewProject'>
             Add New Project
         </div>
-    );
-    };
+    )
+    }
 
 export default AddNewProject;

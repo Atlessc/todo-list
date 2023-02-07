@@ -1,25 +1,23 @@
 import React, { useState } from "react"
 import Modal from "./Modal"
 
-
-// fix the code below
 function AddNewToDos() {
     const [showModal, setShowModal] = useState(false)
 
     return (
         <div className='AddNewToDo'>
+            
             <div className="btn">
-                <button onClick={() => setShowModal(true)}>
-                    + New To Do
-                </button>
+            <button onClick={() => setShowModal(true)}>
+                + New To Do
+            </button>
             </div>
-                <Modal showModal={showModal} setShowModal={setShowModal}>
-                    <div>
-                        hello i work
-                    </div>
-                </Modal>
-            </div>
+            <Modal showModal={showModal} setShowModal={setShowModal}>
+                Hello
+            </Modal>
+        </div>
     )
 }
+
 
 export default AddNewToDos

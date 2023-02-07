@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 
 function Sidebar({ children }) {
@@ -9,4 +9,4 @@ function Sidebar({ children }) {
     );
     };
 
-export default Sidebar;
+export default Sidebar
