@@ -1,8 +1,10 @@
-import React, { useState } from "react";
-import Modal from "./Modal";
+import React, { useState } from "react"
+import Modal from "./Modal"
 
+
+// fix the code below
 function AddNewToDos() {
-    const [showModal, setShowModal] = useState(false);
+    const [showModal, setShowModal] = useState(false)
 
     return (
         <div className='AddNewToDo'>
@@ -17,7 +19,7 @@ function AddNewToDos() {
                     </div>
                 </Modal>
             </div>
-    );
-};
+    )
+}
 
-export default AddNewToDos;
+export default AddNewToDos
