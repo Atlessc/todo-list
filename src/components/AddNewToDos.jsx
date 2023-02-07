@@ -5,7 +5,7 @@ function AddNewToDos() {
     const [showModal, setShowModal] = useState(false);
     return (
         <div className='AddNewToDo'>
-            <button className="btn">
+            <button className="btn" onClick={() => setShowModal(true)}>
                 <div>
                     + New To Do
                 </div>
