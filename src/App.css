@@ -27,3 +27,56 @@
   height: 100%;
   background-color: rgb(151, 151, 151);
 }
+
+.logo {
+  width: 30px;
+  height: 30px;
+  filter: grayscale();
+  -webkit-filter: grayscale();
+}
+
+.User {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+.User img {
+  width: 55px;
+  height: 55px;
+  padding: 5px;
+  border-radius: 50%;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.User .info {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.UserInfo a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+/* Add New To Do Component */
+
+.AddNewToDo {
+  border-bottom: 1px solid rgb(151, 151, 151);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  height: 50px;
+}
+
+.AddNewToDo .btn {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgb(151, 151, 151);
+}

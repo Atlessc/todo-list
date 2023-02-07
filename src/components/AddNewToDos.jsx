@@ -1,11 +1,21 @@
-import React from "react";
-
+import React, { useState } from "react";
+import Modal from "./Modal";
 
 function AddNewToDos() {
+    const [showModal, setShowModal] = useState(false);
     return (
         <div className='AddNewToDo'>
-            Add New To Do 
-        </div>
+            <button className="btn">
+                <div>
+                    + New To Do
+                </div>
+            </button>
+            <Modal showModal={showModal} setShowModal={setShowModal}>
+                <div>
+                    hello i work
+                </div>
+            </Modal>
+            </div>
     );
     };
 
