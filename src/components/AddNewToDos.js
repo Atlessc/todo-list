@@ -12,7 +12,13 @@ function AddNewToDos() {
             </button>
             </div>
             <Modal showModal={showModal} setShowModal={setShowModal}>
-                Hello
+                <section>
+                    <h3>Add New To Do</h3>
+                    <form>
+                        <label htmlFor="title">Title</label>
+                        <input type="text" name="title" id="title" />
+                    </form>
+                </section>
             </Modal>
         </div>
     )
