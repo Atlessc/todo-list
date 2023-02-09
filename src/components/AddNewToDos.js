@@ -1,8 +1,15 @@
 import React, { useState } from "react"
 import Modal from "./Modal"
+import { DatePicker, TimePicker, MuiPickerUtilsProvider } from "@material-ui/pickers"
+
+import DateFnsUtils from '@date-io/date-fns';
 
 function AddNewToDos() {
     const [showModal, setShowModal] = useState(false)
+
+    const {text, setText} = useState("")
+    const [day, setDay] = useState(new Date())
+    const [time, setTime] = useState(new Date())
 
 
     return (
@@ -19,15 +26,17 @@ function AddNewToDos() {
                     <form className="form">
                         <label htmlFor="title">Title</label>
                         <br/>
-                        <input type="text" name="title" id="title" />
+                        <input type="text" name="title" value={text} onChange={ (e) => setText(e.target.value)} id="title" />
                         <br/>
                         <label htmlFor="Email">Email</label>
                         <br/>
                         <input type="email" name="Email" id="Email" />
                         <br/>
-                        <label htmlFor="Date">Date</label>
-                        <br/>
-                        <input type="date" name="Date" id="Date" />
+                        <MuiPickerUtilsProvider utils={}>
+                            <DatePicker value={day} onChange={ (day) => setDay(day)} />
+                            <TimePicker value={time} onChange={ (time) => setTime(time)} />
+
+                        </MuiPickerUtilsProvider>
                         <br/>
                         <label htmlFor="Description">Description</label>
                         <br/>
