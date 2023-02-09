@@ -78,7 +78,7 @@
   justify-content: center;
   z-index: 100;
   border-radius: 15px;
-  box-shadow: 5px 7px 0px 0px rgb(0, 0, 0);
+  box-shadow: -5px 7px 0px 0px rgb(0, 0, 0);
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
@@ -131,7 +131,7 @@
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
-  box-shadow: 3px 4px 0px 0px rgb(0, 0, 0);
+  box-shadow: -4px 4px 0px 0px rgb(0, 0, 0);
 }
 
 .AddNewToDo .btn button:hover {
@@ -204,13 +204,14 @@ h3 {
   height: 25px !important;
   background-color: rgb(135, 76, 146);
   color: rgb(255, 255, 255);
-  box-shadow: 2px 3px 0px 0px rgb(0, 0, 0);
+  box-shadow: -2px 3px 0px 0px rgb(0, 0, 0);
   border: none;
   border-radius: 7px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
+  cursor: pointer;
 }
 
 .CloseBtn {
@@ -224,7 +225,7 @@ h3 {
   cursor: pointer;
   background-color: rgb(135, 76, 146);
   color: rgb(255, 255, 255);
-  box-shadow: 2px 3px 0px 0px rgb(0, 0, 0);
+  box-shadow: -2px 3px 0px 0px rgb(0, 0, 0);
   border-radius: 7px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
