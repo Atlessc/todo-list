@@ -135,7 +135,7 @@
 }
 
 .AddNewToDo .btn button:hover {
-  background-color: rgb(199, 42, 42);
+  background-color: rgb(151, 150, 150);
   transition: all 300ms ease;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
