@@ -70,13 +70,18 @@
   position: absolute;
   top: 25%;
   left: 35%;
-  width: 50%;
+  width: 55%;
   height: 55%;
   background-color: rgb(202, 202, 202);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 100;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 .Modal .Container {
@@ -136,9 +141,24 @@
   -o-transition: all 300ms ease;
 }
 
-#Description {
+label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.Description {
   width: 100%;
-  height: 100px;
+  height: 100px !important;
   border-bottom: 1px solid rgb(151, 151, 151);
 }
 
@@ -163,7 +183,47 @@
   height: 100%;
 }
 
+.AddNewToDo .Modal section .form input {
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  height: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
 .formBtn {
   width: 50px;
-  margin: 0 10px;
+  margin: 25px 31px;
+  width: 70px !important;
+  height: 25px !important;
+  background-color: rgb(135, 76, 146);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.CloseBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 25px;
+  width: 30px !important;
+  height: 30px !important;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(135, 76, 146);
+  color: rgb(255, 255, 255);
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
 }

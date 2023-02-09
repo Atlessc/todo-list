@@ -1,15 +1,13 @@
 import React, { useState } from "react"
 import Modal from "./Modal"
-import { DatePicker, TimePicker, MuiPickerUtilsProvider } from "@material-ui/pickers"
-
-import DateFnsUtils from '@date-io/date-fns';
 
 function AddNewToDos() {
     const [showModal, setShowModal] = useState(false)
 
     const {text, setText} = useState("")
-    const [day, setDay] = useState(new Date())
-    const [time, setTime] = useState(new Date())
+    const {email, setEmail} = useState("")
+    const {date, setDate} = useState("")
+    const {description, setDescription} = useState("")
 
 
     return (
@@ -23,28 +21,26 @@ function AddNewToDos() {
 
                 <section>
                     <h3>Add New To Do</h3>
+                    <button className="CloseBtn" onClick={() => setShowModal(false)}>X</button>
                     <form className="form">
                         <label htmlFor="title">Title</label>
                         <br/>
-                        <input type="text" name="title" value={text} onChange={ (e) => setText(e.target.value)} id="title" />
+                        <input type="text" name="title" value={text} onChange={ (e) => setText(e.target.value)} className="title" />
                         <br/>
                         <label htmlFor="Email">Email</label>
                         <br/>
-                        <input type="email" name="Email" id="Email" />
+                        <input type="email" name="Email" value={email} onChange={(e) => setEmail(e.target.value)} className="Email" />
                         <br/>
-                        <MuiPickerUtilsProvider utils={}>
-                            <DatePicker value={day} onChange={ (day) => setDay(day)} />
-                            <TimePicker value={time} onChange={ (time) => setTime(time)} />
-
-                        </MuiPickerUtilsProvider>
+                        <label htmlFor="Date">Date</label>
+                        <br/>
+                        <input type="date" name="Date" value={date} onChange={(e) => setDate(e.target.value)} className="Date" />
                         <br/>
                         <label htmlFor="Description">Description</label>
                         <br/>
-                        <input type="textarea" name="Description" id="Description" placeholder="What was the issue?"/>
+                        <input type="textarea" name="Description" value={description} onChange={(e) => setDescription(e.target.value)} className="Description" placeholder="What was the issue?"/>
                         <br/>
                         <input type="submit" value="Submit" className="formBtn"/>
                         <input type="reset" value="Reset" className="formBtn"/>
-                        <input type="button" value="Cancel" className="formBtn" onClick={() => setShowModal(false)}/>
                     </form>
                 </section>
             </Modal>
