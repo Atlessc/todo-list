@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import Modal from "./Modal"
+import { Person , CalendarDate , EnvelopAt , BodyText } from 'react-bootstrap-icons'
 
 function AddNewToDos() {
     const [showModal, setShowModal] = useState(false)
@@ -23,7 +24,7 @@ function AddNewToDos() {
                     <h3>Add New To Do</h3>
                     <button className="CloseBtn" onClick={() => setShowModal(false)}>X</button>
                     <form className="form">
-                        <label htmlFor="title">Title</label>
+                        <label htmlFor="title"><BodyText/>Title</label>
                         <br/>
                         <input type="text" name="title" value={text} onChange={ (e) => setText(e.target.value)} className="title" />
                         <br/>
